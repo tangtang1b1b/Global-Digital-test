@@ -1,0 +1,330 @@
+.mom {
+  max-width: 1920px;
+}
+.mom img {
+  width: 100%;
+}
+
+body {
+  background-image: url(../img/back.png);
+}
+
+.fish {
+  margin-bottom: 100px;
+  max-width: 1920px;
+}
+.fish .buy {
+  max-width: 1000px;
+  margin: auto;
+}
+.fish .buy .notice {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+.fish .buy .notice img {
+  width: 100%;
+}
+.fish .buy .notice p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+.fish .buy .notice .drink {
+  background-color: #F88A8A;
+  color: #fff;
+  box-shadow: 0px 3px 10px #772405;
+  width: 225px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+.fish .buy .double {
+  padding: 20px;
+}
+.fish .buy .double img {
+  width: 100%;
+}
+.fish .func {
+  margin: 40px 0px;
+}
+.fish .func h2 {
+  font-weight: bold;
+  margin: auto;
+  position: relative;
+  max-width: 1000px;
+  font-size: 30px;
+  color: #CC6D00;
+  text-align: center;
+  overflow: hidden;
+}
+.fish .func h2::after, .fish .func h2::before {
+  content: "";
+  right: 0;
+  position: absolute;
+  background-color: #CC6D00;
+  height: 3px;
+  border-radius: 5px;
+  width: calc(50% - 70px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fish .func h2::before {
+  left: 0;
+}
+.fish .detail {
+  max-width: 1000px;
+  margin: auto;
+}
+.fish .detail ul li {
+  display: flex;
+  opacity: 0.8;
+  background-color: #fff;
+  padding: 30px 10px;
+  margin: 10px 0px;
+  border-radius: 20px;
+}
+.fish .detail ul li .tit {
+  display: flex;
+  align-items: center;
+}
+.fish .detail ul li .tit .fw {
+  width: 80px;
+  font-size: 18px;
+  color: #2FAFAE;
+}
+.fish .detail ul li .tit .pw {
+  width: calc(100% - 100px);
+}
+.fish .detail ul li .tit p {
+  font-size: 18px;
+  margin: 0;
+  color: #010101;
+  font-weight: bold;
+  line-height: 22px;
+}
+.fish .detail ul li .tit span {
+  margin: 0 20px;
+}
+.fish .detail .last {
+  text-align: right;
+  color: #BF0505;
+  font-size: 15px;
+}
+.fish .product {
+  max-width: 1000px;
+  margin: auto;
+}
+.fish .product .double {
+  padding: 20px 0px 0px 0px;
+}
+.fish .product .double p {
+  font-size: 48px;
+  color: #306E81;
+}
+.fish .product .double img {
+  width: 65%;
+}
+.fish .notice {
+  position: relative;
+}
+.fish .notice .eat {
+  position: absolute;
+  top: -110%;
+  width: 50%;
+}
+.fish .notice .five {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 3px 3px rgba(71, 39, 6, 0.5019607843);
+}
+
+.write {
+  margin: 40px 0px;
+}
+.write .contain {
+  max-width: 1000px;
+  margin: auto;
+}
+.write .contain h2 {
+  font-weight: bold;
+  margin: auto;
+  position: relative;
+  max-width: 1000px;
+  font-size: 30px;
+  color: #CC6D00;
+  text-align: center;
+  overflow: hidden;
+}
+.write .contain h2::after, .write .contain h2::before {
+  content: "";
+  right: 0;
+  position: absolute;
+  background-color: #CC6D00;
+  height: 3px;
+  border-radius: 5px;
+  width: calc(50% - 70px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.write .contain h2::before {
+  left: 0;
+}
+.write .contain p {
+  margin: 50px 0px;
+  font-size: 18px;
+  color: #747474;
+  text-align: center;
+}
+.write .contain .ask {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.write .contain .ask label {
+  position: relative;
+  color: #62A9AC;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.write .contain .ask label span {
+  color: #FF0000;
+}
+.write .contain .ask label input {
+  width: calc(100% + 20px);
+  transform: translateX(-10px);
+  margin: 10px 0px;
+  border: solid 1px #62A9AC;
+}
+.write .contain .ask label select {
+  width: calc(100% + 20px);
+  transform: translateX(-10px);
+  margin-top: 10px;
+  padding: 2px 2px;
+  border: solid 1px #62A9AC;
+}
+.write .contain .ask label textarea {
+  width: calc(100% + 20px);
+  transform: translateX(-10px);
+  margin-top: 10px;
+  border: solid 1px #62A9AC;
+}
+.write .contain .ask label::before {
+  content: "*";
+  position: absolute;
+  left: 0px;
+  color: #FF0000;
+}
+.write .contain .checkk {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.write .contain .checkk .check {
+  background-color: #62A9AC;
+  padding: 5px 100px;
+  color: #fff;
+  border: none;
+}
+
+.loc {
+  background-color: #F8E8D5;
+  color: #AD7B43;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 0px;
+}
+.loc .tp {
+  margin: auto;
+  max-width: 400px;
+  display: flex;
+}
+.loc .tp .site {
+  width: 30%;
+}
+.loc .tp .site img {
+  width: 100%;
+}
+.loc .tp p {
+  font-weight: bold;
+  font-size: 18px;
+  width: 80%;
+  text-align: center;
+}
+.loc .floor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.loc .floor .rochi {
+  display: flex;
+}
+.loc .floor .rochi .ice {
+  padding: 5px;
+}
+.loc .floor .rochi .ice img {
+  width: 100%;
+}
+.loc .floor .rochi p {
+  padding: 5px;
+  font-size: 18px;
+}
+.loc .down {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.loc .down .rochi {
+  display: flex;
+}
+.loc .down .rochi .phone {
+  display: flex;
+  padding: 5px;
+}
+.loc .down .rochi .phone .cel {
+  padding: 5px;
+}
+.loc .down .rochi .phone .cel img {
+  width: 100%;
+}
+.loc .down .rochi .phone p {
+  padding: 5px;
+  font-size: 18px;
+}
+.loc .down .rochi .day {
+  padding: 5px;
+  display: flex;
+}
+.loc .down .rochi .day .cir {
+  padding: 5px;
+}
+.loc .down .rochi .day .cir img {
+  width: 100%;
+}
+.loc .down .rochi .day p {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.copy {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #AD7B43;
+  background-color: #EDD2B3;
+  font-weight: bold;
+  padding-top: 20px;
+}
