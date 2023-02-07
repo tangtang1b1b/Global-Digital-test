@@ -80,8 +80,13 @@ body
         .double
             width: 60%
             padding: 20px
-            img
-                width: 100%
+            .swiper
+                width: 600px
+                height: 300px
+                img
+                    width: 100%
+        .double:hover
+            cursor: pointer
     .func
         margin: 40px 0px
         h2
@@ -143,14 +148,18 @@ body
     .product
         max-width: 1000px
         margin: auto
+        .colmd6
+            width: 50%
         .double
+            width: 50%
             padding: 20px 0px 0px 0px
-            p
+            .welld
                 font-size: 48px
                 color: $color_306E81
-            img
+            .good
                 width: 65%
     .notice
+        padding: 0
         position: relative
         img
             width: 100%
@@ -327,9 +336,7 @@ body
     background-color: #EDD2B3 
     font-weight: bold
     padding-top: 20px
-.swiper
-    width: 600px
-    height: 300px
+
 
 @media screen and (max-width:1024px) 
     .mom
@@ -369,6 +376,7 @@ body
             top: 200px
         .buy
             display: flex
+            justify-content: center
             flex-direction: row-reverse
             .notice
                 width: 100%
@@ -393,8 +401,11 @@ body
             .double
                 width: 100%
                 padding: 20px
-                img
-                    width: 100%
+                .swiper
+                    height: 300px
+                    width: 500px
+                    .pic
+                        width: 100%
         .func
             margin: 40px 0px
             h2
@@ -457,13 +468,16 @@ body
         .product
             max-width: 1000px
             margin: auto
+            .colmd6
+                display: none
             .double
+                width: 100%
                 padding: 20px 0px 0px 0px
-                p
+                .welld
                     font-size: 48px
                     color: $color_306E81
                     text-align: center
-                img
+                .good
                     width: 100%
         .notice
             position: relative
@@ -487,8 +501,12 @@ body
                 font-weight: bold
                 color: #fff
                 text-shadow: 0px 3px 3px #47270680
-    
-
+@media screen and (max-width:768px)
+    .fish
+        .buy
+            .double
+                .swiper
+                    width: 350px
 
 
 

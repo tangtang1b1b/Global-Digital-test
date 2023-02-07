@@ -87,8 +87,15 @@ body {
   width: 60%;
   padding: 20px;
 }
-.fish .buy .double img {
+.fish .buy .double .swiper {
+  width: 600px;
+  height: 300px;
+}
+.fish .buy .double .swiper img {
   width: 100%;
+}
+.fish .buy .double:hover {
+  cursor: pointer;
 }
 .fish .func {
   margin: 40px 0px;
@@ -165,17 +172,22 @@ body {
   max-width: 1000px;
   margin: auto;
 }
+.fish .product .colmd6 {
+  width: 50%;
+}
 .fish .product .double {
+  width: 50%;
   padding: 20px 0px 0px 0px;
 }
-.fish .product .double p {
+.fish .product .double .welld {
   font-size: 48px;
   color: #306E81;
 }
-.fish .product .double img {
+.fish .product .double .good {
   width: 65%;
 }
 .fish .notice {
+  padding: 0;
   position: relative;
 }
 .fish .notice img {
@@ -396,11 +408,6 @@ body {
   padding-top: 20px;
 }
 
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-
 @media screen and (max-width: 1024px) {
   .mom {
     width: 100%;
@@ -447,6 +454,7 @@ body {
   }
   .fish .buy {
     display: flex;
+    justify-content: center;
     flex-direction: row-reverse;
   }
   .fish .buy .notice {
@@ -479,7 +487,11 @@ body {
     width: 100%;
     padding: 20px;
   }
-  .fish .buy .double img {
+  .fish .buy .double .swiper {
+    height: 300px;
+    width: 500px;
+  }
+  .fish .buy .double .swiper .pic {
     width: 100%;
   }
   .fish .func {
@@ -558,15 +570,19 @@ body {
     max-width: 1000px;
     margin: auto;
   }
+  .fish .product .colmd6 {
+    display: none;
+  }
   .fish .product .double {
+    width: 100%;
     padding: 20px 0px 0px 0px;
   }
-  .fish .product .double p {
+  .fish .product .double .welld {
     font-size: 48px;
     color: #306E81;
     text-align: center;
   }
-  .fish .product .double img {
+  .fish .product .double .good {
     width: 100%;
   }
   .fish .notice {
@@ -595,5 +611,10 @@ body {
     font-weight: bold;
     color: #fff;
     text-shadow: 0px 3px 3px rgba(71, 39, 6, 0.5019607843);
+  }
+}
+@media screen and (max-width: 768px) {
+  .fish .buy .double .swiper {
+    width: 350px;
   }
 }
