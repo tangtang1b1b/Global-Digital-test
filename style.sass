@@ -8,15 +8,40 @@ $color_707070: #707070
     // outline: solid 1px
 
 .mom
-    max-width: 1920px
+    width: 100%
     img
         width: 100%
+    .head
+        max-width: 1000px
+        margin: auto
+        img
+            width: 117px
+            position: absolute
+            padding-top: 48px
+        img:nth-child(2)
+            width: 309px
+            margin-left: 117px
+        img:nth-child(3)
+            width: 358px
+            margin-left: 117px
+            margin-top: 77px
 
 body
     background-image: url(../img/back.png)
+    background-size: cover
+    background-attachment: fixed
+    opacity: 0.9
 .fish
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+    margin-top: 50px
     margin-bottom: 100px
     max-width: 1920px
+    .tatoo2
+        position: absolute
+        top: 200px
     .buy
         max-width: 1000px
         margin: auto
@@ -126,7 +151,15 @@ body
             color: #fff
             text-shadow: 0px 3px 3px #47270680
 .write
+    position: relative
     margin: 40px 0px
+    background-image: url(../img/down.png)
+    background-size: 100% 200%
+    background-position: 0 30%
+    .tatoo
+        position: absolute
+        right: 0
+        top: -60%
     .contain
         max-width: 1000px
         margin: auto
@@ -192,7 +225,7 @@ body
                 left: 0px
                 color: #FF0000
         .checkk
-            margin: 50px
+            margin: 50px 50px 100px 50px
             display: flex
             justify-content: center
             .check
@@ -207,16 +240,19 @@ body
     flex-direction: column
     justify-content: center
     width: 100%
-    padding: 80px 0px
+    padding: 60px 0px
     .tp
         margin: auto
         max-width: 400px
         display: flex
         .site
+            padding: 5px
             width: 30%
             img
                 width: 100%
         p
+            padding: 5px
+            margin: 0px
             font-weight: bold
             font-size: 18px
             width: 80%
@@ -232,6 +268,7 @@ body
                 img
                     width: 100%
             p
+                margin: 0px
                 padding: 5px
                 font-size: 18px
     .down
@@ -249,6 +286,7 @@ body
                     img
                         width: 100%
                 p
+                    margin: 0px
                     padding: 5px
                     font-size: 18px
             .day
@@ -259,6 +297,7 @@ body
                     img
                         width: 100%
                 p
+                    margin: 0px
                     padding: 5px
                     font-size: 18px
 .copy
