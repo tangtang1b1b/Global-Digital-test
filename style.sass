@@ -12,19 +12,23 @@ $color_707070: #707070
     img
         width: 100%
     .head
+        width: 100%
         max-width: 1000px
-        margin: auto
-        img
-            width: 117px
-            position: absolute
-            padding-top: 48px
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        img:nth-child(1)
+            top: 38px
+            position: relative
+            max-width: 117px
+            width: 13%
+            vertical-align: top
         img:nth-child(2)
-            width: 309px
-            margin-left: 117px
-        img:nth-child(3)
-            width: 358px
-            margin-left: 117px
-            margin-top: 77px
+            top: 38px
+            position: relative
+            max-width: 309px
+            width: 35%
+            vertical-align: top
 
 body
     background-image: url(../img/back.png)
@@ -41,6 +45,7 @@ body
     max-width: 1920px
     .tatoo2
         position: absolute
+        width: 20%
         top: 200px
     .buy
         max-width: 1000px
@@ -49,7 +54,12 @@ body
             display: flex
             flex-direction: column
             padding: 0px 20px
-            img
+            img:nth-child(1)
+                top: -12vw
+                left: 117px
+                width: 20vw
+                position: absolute
+            img:nth-child(2)
                 width: 100%
             p
                 text-align: center
@@ -96,7 +106,10 @@ body
         max-width: 1000px
         margin: auto
         ul
+            padding: 0
+            margin: 0
             li
+                width: 100%
                 display: flex
                 opacity: 0.8
                 background-color: #fff
@@ -119,7 +132,7 @@ body
                         font-weight: bold
                         line-height: 22px
                     span
-                        margin: 0 20px
+                        margin: 0 10px
         .last
             text-align: right
             color: #BF0505
@@ -136,10 +149,13 @@ body
                 width: 65%
     .notice
         position: relative
+        img
+            width: 100%
         .eat
             position: absolute
             top: -110%
             width: 50%
+            left: 0
         .five
             position: absolute
             top: 50%
@@ -309,6 +325,161 @@ body
     font-weight: bold
     padding-top: 20px
         
+@media screen and (max-width:1024px) 
+    .mom
+        width: 100%
+        .baby
+            height: 20vh
+            object-fit: cover
+            width: 100%
+        .head
+            width: 100%
+            max-width: 1000px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            img:nth-child(1)
+                top: 18px
+                position: relative
+                max-width: 117px
+                width: 13%
+                vertical-align: top
+            img:nth-child(2)
+                top: 18px
+                position: relative
+                max-width: 309px
+                width: 35%
+                vertical-align: top
+    .fish
+        position: relative
+        margin-left: auto
+        margin-right: auto
+        width: 100%
+        margin-top: 50px
+        margin-bottom: 100px
+        max-width: 1920px
+        .tatoo2
+            position: absolute
+            top: 200px
+        .buy
+            display: flex
+            flex-direction: row-reverse
+            .notice
+                img:nth-child(1)
+                    display: none
+                img:nth-child(2)
+                    object-fit: contain
+                p
+                    text-align: center
+                    font-size: 20px
+                    margin: 0
+                .drink 
+                    background-color: #F88A8A
+                    color: #fff
+                    box-shadow: 0px 3px 10px #772405
+                    width: 225px
+                    padding: 10px 40px
+                    border: none
+                    border-radius: 30px
+                    font-weight: bold
+                    margin: 10px auto
+            .double
+                padding: 20px
+                img
+                    width: 100%
+        .func
+            margin: 40px 0px
+            h2
+                font-weight: bold
+                margin: auto
+                position: relative
+                max-width: 1000px
+                font-size: 30px
+                color: #CC6D00
+                text-align: center
+                overflow: hidden
+            h2::after,h2::before
+                content: ""
+                right: 0
+                position: absolute
+                background-color: #CC6D00
+                height: 3px
+                border-radius: 5px
+                width: calc( 50% - 70px )
+                top: 50%
+                transform: translateY(-50%)
+            h2::before 
+                left: 0
+        .detail
+            max-width: 1000px
+            margin: auto
+            ul
+                padding: 0
+                margin: 0
+                li
+                    width: 100%
+                    display: flex
+                    opacity: 0.8
+                    background-color: #fff
+                    padding: 30px 10px
+                    margin: 10px 0px
+                    border-radius: 20px
+                    .tit
+                        display: flex
+                        align-items: center
+                        .fw
+                            width: 80px
+                            font-size: 18px
+                            color: #2FAFAE
+                        .pw
+                            width: calc( 100% - 100px )
+                        p
+                            font-size: 18px
+                            margin: 0
+                            color: #010101
+                            font-weight: bold
+                            line-height: 22px
+                        span
+                            margin: 0 10px
+            .last
+                text-align: right
+                color: #BF0505
+                font-size: 15px
+                text-align: center
+        .product
+            max-width: 1000px
+            margin: auto
+            .double
+                padding: 20px 0px 0px 0px
+                p
+                    font-size: 48px
+                    color: $color_306E81
+                    text-align: center
+                img
+                    width: 100%
+        .notice
+            position: relative
+            img
+                width: 100%
+                height: 260px
+                object-fit: cover
+            .eat
+                position: absolute
+                top: -110%
+                width: 50%
+                left: 0
+                display: none
+            .five
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                text-align: center
+                width: 100%
+                font-size: 20px
+                font-weight: bold
+                color: #fff
+                text-shadow: 0px 3px 3px #47270680
+    
 
 
 
