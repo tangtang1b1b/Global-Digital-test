@@ -48,45 +48,48 @@ body
         width: 20%
         top: 200px
     .buy
-        max-width: 1000px
-        margin: auto
-        .notice
-            width: 40%
-            display: flex
-            flex-direction: column
-            padding: 0px 20px
-            img:nth-child(1)
-                top: -12vw
-                left: 117px
-                width: 20vw
-                max-width: 500px
-                position: absolute
-            img:nth-child(2)
-                width: 100%
-            p
-                text-align: center
-                font-size: 20px
-                margin: 0
-            .drink 
-                background-color: #F88A8A
-                color: #fff
-                box-shadow: 0px 3px 10px #772405
-                width: 225px
-                padding: 10px 40px
-                border: none
-                border-radius: 30px
-                font-weight: bold
-                margin: 10px auto
-        .double
-            width: 60%
-            padding: 20px
-            .swiper
-                width: 600px
-                height: 300px
-                img
+        width: 100%
+        .rrro
+            margin: auto
+            max-width: 1000px
+            .notice
+                width: 40%
+                display: flex
+                flex-direction: column
+                padding: 0
+                img:nth-child(1)
+                    top: -12vw
+                    left: 117px
+                    width: 20vw
+                    max-width: 500px
+                    position: absolute
+                img:nth-child(2)
                     width: 100%
-        .double:hover
-            cursor: pointer
+                p
+                    text-align: center
+                    font-size: 20px
+                    margin: 0
+                .drink 
+                    background-color: #F88A8A
+                    color: #fff
+                    box-shadow: 0px 3px 10px #772405
+                    width: 225px
+                    padding: 10px 40px
+                    border: none
+                    border-radius: 30px
+                    font-weight: bold
+                    margin: 10px auto
+            .double
+                padding: 0
+                width: 60%
+                padding: 10px
+                .swiper
+                    width: 100%
+                    height: 300px
+                    img
+                        width: 100%
+            .double:hover
+                cursor: pointer
     .func
         margin: 40px 0px
         h2
@@ -378,34 +381,36 @@ body
             display: flex
             justify-content: center
             flex-direction: row-reverse
-            .notice
-                width: 100%
-                img:nth-child(1)
-                    display: none
-                img:nth-child(2)
-                    object-fit: contain
-                p
-                    text-align: center
-                    font-size: 20px
-                    margin: 0
-                .drink 
-                    background-color: #F88A8A
-                    color: #fff
-                    box-shadow: 0px 3px 10px #772405
-                    width: 225px
-                    padding: 10px 40px
-                    border: none
-                    border-radius: 30px
-                    font-weight: bold
-                    margin: 10px auto
-            .double
-                width: 100%
-                padding: 20px
-                .swiper
-                    height: 300px
-                    width: 500px
-                    .pic
-                        width: 100%
+            .rrro
+                .notice
+                    padding: 0
+                    width: 100%
+                    img:nth-child(1)
+                        display: none
+                    img:nth-child(2)
+                        object-fit: contain
+                    p
+                        text-align: center
+                        font-size: 20px
+                        margin: 0
+                    .drink 
+                        background-color: #F88A8A
+                        color: #fff
+                        box-shadow: 0px 3px 10px #772405
+                        width: 225px
+                        padding: 10px 40px
+                        border: none
+                        border-radius: 30px
+                        font-weight: bold
+                        margin: 10px auto
+                .double
+                    width: 100%
+                    padding: 0px
+                    .swiper
+                        height: 300px
+                        width: 500px
+                        .pic
+                            width: 100%
         .func
             margin: 40px 0px
             h2
@@ -504,9 +509,16 @@ body
 @media screen and (max-width:768px)
     .fish
         .buy
-            .double
-                .swiper
-                    width: 350px
+            .rrro
+                .notice
+                    box-sizing: border-box
+                    padding: 0
+                .double
+                    padding: 0
+                    box-sizing: border-box
+                    .swiper
+                        padding: 0
+                        width: 350px
 
 
 
