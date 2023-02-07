@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">  
     <title>好孕媽媽</title>
 </head>
 <body>
@@ -21,11 +22,21 @@
         <img class="tatoo2" src="./img/Group 1441.svg" alt="">
         <div class="buy">
             <div class="row d-flex flex-row-reverse">
-                <div class="col-md-7 col-sm-12 double">
-
-                    <img src="./img/double15_810x535@2x.png" alt="">
+                <!-- <div class="col-md-7 col-sm-12 double"> -->
+                <div class="double">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/double15_810x535@2x.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/double15_810x535@2x.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/double15_810x535@2x.png" alt=""></div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- <img src="./img/double15_810x535@2x.png" alt=""> -->
                 </div>
-                <div class="col-md-5 col-sm-12 notice">
+                <!-- <div class="col-md-5 col-sm-12 notice"> -->
+                <div class="notice">
                     <img src="./img/Group 1517@2x.png" alt="">
                     <img src="./img/Group 1518.png" alt="">
                     <p>第一次有了孕期反應，第一次聽見心跳<br>第一次感覺到有一個小小生命在身體裡茁壯<br>有了寶寶，更要好好照顧自己<br>讓我們和妳一起愛護寶寶，呵護自己</p>
@@ -128,6 +139,7 @@
         </div>
     </footer>
     <p class="copy">Copyright @ 2021 CHU ZHUAN INC. All Rights Reserved.</p>
-
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+    <script src="./swiper.js"></script>
 </body>
 </html>

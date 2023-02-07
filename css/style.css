@@ -52,6 +52,7 @@ body {
   margin: auto;
 }
 .fish .buy .notice {
+  width: 40%;
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
@@ -60,6 +61,7 @@ body {
   top: -12vw;
   left: 117px;
   width: 20vw;
+  max-width: 500px;
   position: absolute;
 }
 .fish .buy .notice img:nth-child(2) {
@@ -82,6 +84,7 @@ body {
   margin: 10px auto;
 }
 .fish .buy .double {
+  width: 60%;
   padding: 20px;
 }
 .fish .buy .double img {
@@ -393,6 +396,11 @@ body {
   padding-top: 20px;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 @media screen and (max-width: 1024px) {
   .mom {
     width: 100%;
@@ -441,6 +449,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
   }
+  .fish .buy .notice {
+    width: 100%;
+  }
   .fish .buy .notice img:nth-child(1) {
     display: none;
   }
@@ -465,6 +476,7 @@ body {
     margin: 10px auto;
   }
   .fish .buy .double {
+    width: 100%;
     padding: 20px;
   }
   .fish .buy .double img {
